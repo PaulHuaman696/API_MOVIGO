@@ -115,7 +115,7 @@ exports.sendCode = async (req, res) => {
   if (!phone) return res.status(400).json({ error: 'Número telefónico requerido' });
 
   // Generar código 6 dígitos
-  const code = Math.floor(100000 + Math.random() * 900000).toString();
+  const code = Math.floor(100000 + Math.random() * 9000).toString();
 
   try {
     // Enviar SMS
